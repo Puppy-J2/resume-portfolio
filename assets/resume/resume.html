@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Joshua M. Battung | Resume</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #19313b;
+      background: #edf2f1;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 8.5in;
+      min-height: 11in;
+      margin: 24px auto;
+      padding: 0.52in 0.62in;
+      background: #fff;
+      box-shadow: 0 8px 32px rgba(13, 43, 48, 0.12);
+      font-size: 9.5pt;
+      line-height: 1.4;
+    }
+
+    header {
+      padding-bottom: 14px;
+      border-bottom: 3px solid #197967;
+    }
+
+    h1 {
+      margin: 0;
+      color: #123b3b;
+      font-size: 27pt;
+      letter-spacing: 0.3px;
+    }
+
+    .headline {
+      margin: 4px 0 0;
+      color: #197967;
+      font-size: 11pt;
+      font-weight: 700;
+    }
+
+    section {
+      margin-top: 15px;
+    }
+
+    h2 {
+      margin: 0 0 6px;
+      padding-bottom: 3px;
+      border-bottom: 1px solid #c9d9d5;
+      color: #197967;
+      font-size: 11pt;
+      letter-spacing: 0.7px;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5px 20px;
+    }
+
+    .skill-group strong,
+    .project-title,
+    .education-title,
+    .certificate-title {
+      color: #19313b;
+    }
+
+    .project-title,
+    .education-title,
+    .certificate-title {
+      font-size: 10pt;
+      font-weight: 700;
+    }
+
+    .subheading {
+      margin-top: 2px;
+      color: #546a70;
+      font-style: italic;
+    }
+
+    ul {
+      margin: 5px 0 0;
+      padding-left: 18px;
+    }
+
+    li {
+      margin: 2px 0;
+      padding-left: 2px;
+    }
+
+    .item + .item {
+      margin-top: 9px;
+    }
+
+    .certificate-date {
+      color: #546a70;
+    }
+
+    @page {
+      size: Letter;
+      margin: 0;
+    }
+
+    @media print {
+      :root {
+        background: #fff;
+      }
+
+      body {
+        width: auto;
+        min-height: auto;
+        margin: 0;
+        box-shadow: none;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Joshua M. Battung</h1>
+    <p class="headline">BSIT Student | Aspiring Software Developer</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Profile</h2>
+      <p>Information Technology student with hands-on academic project experience designing and building a web-based queue management system for student services. Interested in software development, user-focused interfaces, and practical IT solutions.</p>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <div class="skills">
+        <p class="skill-group"><strong>Web:</strong> HTML, CSS, JavaScript, Bootstrap</p>
+        <p class="skill-group"><strong>Programming:</strong> PHP, Python, Java</p>
+        <p class="skill-group"><strong>Database:</strong> MySQL, database fundamentals</p>
+        <p class="skill-group"><strong>Areas of interest:</strong> Networking, cybersecurity</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Project</h2>
+      <div class="item">
+        <p class="project-title">Digital Queue Management System for Student Services</p>
+        <p class="subheading">Capstone / Academic Project | Full Stack Developer, UI/UX Designer, Database Contributor</p>
+        <ul>
+          <li>Contributed to a web-based system for managing student queue requests and appointments across school offices and service counters.</li>
+          <li>Designed the user interface and worked on queue workflow logic, data handling, testing, and project documentation.</li>
+          <li>Implemented and documented features including appointment scheduling, queue tracking, an administrative dashboard, and request status updates.</li>
+          <li><strong>Technologies:</strong> HTML, CSS, JavaScript, PHP, MySQL, Bootstrap</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <p class="education-title">Bachelor of Science in Information Technology (BSIT)</p>
+      <p class="subheading">Current student</p>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <div class="item">
+        <p class="certificate-title">Microsoft Cybersecurity Course: Security, Compliance, and Identity Fundamentals</p>
+        <p class="certificate-date">TESDA Online Program | September 9, 2026</p>
+      </div>
+      <div class="item">
+        <p class="certificate-title">AI Security Summit 2026: CxO Trust</p>
+        <p class="certificate-date">Cloud Security Alliance | August 19, 2026 | 3.5 credits</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
