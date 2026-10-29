@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal resume and portfolio website with profile, skills, projects, education, and contact information."
+    />
+    <meta
+      name="keywords"
+      content="resume, portfolio, IT student, software developer, web development, projects"
+    />
+    <meta name="author" content="Joshua M. Battung" />
+    <title>Joshua M. Battung | Resume Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Main navigation">
+        <a href="#home" class="brand" aria-label="Go to homepage">JB</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-menu">
+          <a href="#home">Home</a>
+          <a href="#skills">Skills</a>
+          <a href="#certificates">Certificates</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero section">
+        <div class="container hero-grid reveal">
+          <div class="hero-copy">
+            <p class="eyebrow">Hello, I am</p>
+            <h1>Joshua M. Battung</h1>
+            <h2>BSIT Student | Aspiring Software Developer</h2>
+            <div class="cta-group">
+              <a class="btn btn-primary" href="#projects">View My Projects</a>
+              <a class="btn btn-secondary" href="assets/resume/resume.pdf" download="Joshua-M-Battung-Resume.pdf">Download Resume</a>
+              <a class="btn btn-ghost" href="#contact">Contact Me</a>
+            </div>
+            <ul class="social-links" aria-label="Social media profiles">
+              <li><a href="mailto:mjoshuabattung@gmail.com" aria-label="Email address">Email</a></li>
+            </ul>
+          </div>
+
+          <div class="hero-card reveal">
+            <div class="profile-visual">
+              <img
+                src="assets/images/profile-joshua-battung.webp"
+                alt="Professional portrait of Joshua M. Battung"
+              />
+            </div>
+            <div class="profile-meta">
+              <div>
+                <span class="label">Location</span>
+                <strong>City, Province</strong>
+              </div>
+              <div>
+                <span class="label">Availability</span>
+                <strong>Open for Internship</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Skills</p>
+            <h3>Technical and Professional Skills</h3>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-panel reveal">
+              <h4>Technical Skills</h4>
+              <div class="skill-item">
+                <div class="skill-top"><span>HTML & CSS</span><span>Intermediate</span></div>
+                <div class="progress"><span style="width: 80%"></span></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-top"><span>JavaScript</span><span>Beginner to Intermediate</span></div>
+                <div class="progress"><span style="width: 70%"></span></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-top"><span>Python</span><span>Intermediate</span></div>
+                <div class="progress"><span style="width: 75%"></span></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-top"><span>Java</span><span>Beginner</span></div>
+                <div class="progress"><span style="width: 60%"></span></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-top"><span>PHP</span><span>Beginner</span></div>
+                <div class="progress"><span style="width: 50%"></span></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-top"><span>MySQL</span><span>Beginner</span></div>
+                <div class="progress"><span style="width: 55%"></span></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-top"><span>Computer Networking</span><span>Developing</span></div>
+                <div class="progress"><span style="width: 65%"></span></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-top"><span>Cybersecurity</span><span>Developing</span></div>
+                <div class="progress"><span style="width: 60%"></span></div>
+              </div>
+            </div>
+
+            <div class="skill-panel reveal">
+              <h4>Professional Skills</h4>
+              <ul class="chip-list">
+                <li>Communication</li>
+                <li>Leadership</li>
+                <li>Teamwork</li>
+                <li>Problem Solving</li>
+                <li>Critical Thinking</li>
+                <li>Adaptability</li>
+                <li>Time Management</li>
+                <li>Learning Agility</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="certificates" class="section alt-section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Certificates</p>
+            <h3>Certificates and Achievements</h3>
+          </div>
+
+          <div class="card-grid">
+            <article class="certificate-card reveal">
+              <div class="cert-preview certificate-preview">
+                <img
+                  class="certificate-preview-image"
+                  src="assets/certificates/cloud-security-alliance-cxotrust.png"
+                  alt="Cloud Security Alliance AI Security Summit 2026: CxO Trust certificate"
+                  loading="lazy"
+                >
+              </div>
+              <h4>AI Security Summit 2026: CxO Trust</h4>
+              <p class="muted">Cloud Security Alliance</p>
+              <p class="muted">Completed: August 19, 2026 · 3.5 credits</p>
+              <a href="assets/certificates/cloud-security-alliance-cxotrust.png" target="_blank" rel="noreferrer">
+                View Certificate
+              </a>
+            </article>
+
+            <article class="certificate-card reveal">
+              <div class="cert-preview certificate-preview">
+                <img
+                  class="certificate-preview-image"
+                  src="assets/certificates/tesda-microsoft-cybersecurity-certificate.png"
+                  alt="TESDA Microsoft Cybersecurity course certificate"
+                  loading="lazy"
+                >
+              </div>
+              <h4>Microsoft Cybersecurity Course: Security, Compliance, and Identity Fundamentals</h4>
+              <p class="muted">TESDA Online Program</p>
+              <p class="muted">Completed: September 9, 2026</p>
+              <a href="assets/certificates/tesda-microsoft-cybersecurity-certificate.png" target="_blank" rel="noreferrer">
+                View Certificate
+              </a>
+            </article>
+
+            <article class="certificate-card reveal">
+              <div class="cert-preview placeholder-box">Additional Certificate</div>
+              <h4>Add Another Certificate</h4>
+              <p class="muted">Issuing Organization</p>
+              <p class="muted">Date Earned: MM/YYYY</p>
+              <p class="muted">Replace this card when you have another certificate to add.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section alt-section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Projects</p>
+            <h3>Portfolio of Work</h3>
+          </div>
+
+          <article class="project-card reveal">
+            <div class="project-info">
+              <div class="project-header">
+                <span class="project-type">Capstone / Academic Project</span>
+                <h4>Digital Queue Management System for Student Services</h4>
+              </div>
+              <p>
+                A web-based system designed to manage online appointment and queue requests for school offices and student service counters. The system supports student requests, service scheduling, queue monitoring, and status updates for administrative staff.
+              </p>
+
+              <div class="project-details">
+                <div>
+                  <h5>My Role</h5>
+                  <p>Full Stack Developer / UI/UX Designer / Database Contributor</p>
+                </div>
+                <div>
+                  <h5>Purpose</h5>
+                  <p>To reduce long waiting times, organize student transactions, and improve office efficiency.</p>
+                </div>
+                <div>
+                  <h5>Technologies Used</h5>
+                  <p>HTML, CSS, JavaScript, PHP, MySQL, Bootstrap</p>
+                </div>
+                <div>
+                  <h5>Key Features</h5>
+                  <p>Appointment scheduling, queue tracking, admin dashboard, request status updates, student records, notifications.</p>
+                </div>
+                <div>
+                  <h5>My Contributions</h5>
+                  <p>Designed the interface, built queue workflow logic, managed data handling, and supported testing and documentation.</p>
+                </div>
+              </div>
+
+              <div class="project-links">
+                <a href="http://127.0.0.1:8000/" target="_blank" rel="noreferrer">Digital Queue Project</a>
+              </div>
+            </div>
+
+            <div class="project-gallery" aria-label="Project screenshots">
+              <figure class="gallery-item">
+                <img src="assets/images/projects/digital-queue-dashboard.png" alt="Digital Queue administrator dashboard showing service statistics and queue activity" />
+                <figcaption>Dashboard Overview</figcaption>
+              </figure>
+              <figure class="gallery-item">
+                <img src="assets/images/projects/digital-queue-system-queue.png" alt="Digital Queue system queue page showing service counters and active tickets" />
+                <figcaption>System Queue</figcaption>
+              </figure>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="education" class="section alt-section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Education</p>
+            <h3>Educational Background</h3>
+          </div>
+
+          <div class="education-grid reveal">
+            <article class="education-card">
+              <span class="education-level">Tertiary Education</span>
+              <h4>Course / Degree</h4>
+              <p>School Name</p>
+              <p>Graduation Year / Expected Graduation Year</p>
+              <p>Academic Achievements: Add if available</p>
+            </article>
+            <article class="education-card">
+              <span class="education-level">Secondary Education</span>
+              <h4>Senior High School / High School</h4>
+              <p>School Name</p>
+              <p>Graduation Year</p>
+              <p>Academic Achievements: Add if available</p>
+            </article>
+            <article class="education-card">
+              <span class="education-level">Elementary Education</span>
+              <h4>Elementary School</h4>
+              <p>School Name</p>
+              <p>Graduation Year</p>
+              <p>Academic Achievements: Add if available</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container contact-grid reveal">
+          <div class="contact-info">
+            <p class="eyebrow">Contact</p>
+            <h3>Let’s Connect</h3>
+            <ul class="contact-list">
+              <li><strong>Email:</strong> <a href="mailto:mjoshuabattung@gmail.com">mjoshuabattung@gmail.com</a></li>
+              <li><strong>Phone:</strong> <a href="tel:09690408789">09690408789</a></li>
+            </ul>
+          </div>
+
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" type="text" placeholder="Project inquiry or internship opportunity" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary submit-btn">Send Message</button>
+            <p id="form-status" class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <a href="#home" class="back-to-top" aria-label="Back to top">↑</a>
+      </div>
+    </footer>
+
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <button class="lightbox-close" aria-label="Close image viewer">×</button>
+      <img src="" alt="Expanded project screenshot" />
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
