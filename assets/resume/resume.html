@@ -32,6 +32,19 @@
       border-bottom: 3px solid #197967;
     }
 
+    .header-layout {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .profile-photo {
+      display: block;
+      width: 110px;
+      height: 132px;
+      border: 2px solid #197967;
+      border-radius: 8px;
+    }
+
     h1 {
       margin: 0;
       color: #123b3b;
@@ -131,9 +144,18 @@
 </head>
 <body>
   <header>
-    <h1>Joshua M. Battung</h1>
-    <p class="headline">BSIT Student | Aspiring Software Developer</p>
-    <p><a href="mailto:mbattungjoshua@gmail.com">mbattungjoshua@gmail.com</a></p>
+    <table class="header-layout">
+      <tr>
+        <td>
+          <h1>Joshua M. Battung</h1>
+          <p class="headline">BSIT Student | Aspiring Software Developer</p>
+          <p><a href="mailto:mbattungjoshua@gmail.com">mbattungjoshua@gmail.com</a></p>
+        </td>
+        <td width="120" align="right" valign="top">
+          <img class="profile-photo" src="../images/profile-joshua-battung.png" width="110" height="132" alt="Portrait of Joshua M. Battung">
+        </td>
+      </tr>
+    </table>
   </header>
 
   <main>
