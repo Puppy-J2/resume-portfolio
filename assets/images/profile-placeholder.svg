@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900" role="img" aria-labelledby="title desc">
+  <title id="title">Profile Placeholder</title>
+  <desc id="desc">Abstract portrait placeholder for a student portfolio website.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0b2334"/>
+      <stop offset="100%" stop-color="#142f46"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#4cc9f0"/>
+      <stop offset="100%" stop-color="#8bd8ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="900" fill="url(#bg)"/>
+  <circle cx="400" cy="290" r="145" fill="#d5ebf6" opacity="0.96"/>
+  <path d="M255 760c18-155 110-220 145-220s126 66 145 220" fill="#d5ebf6" opacity="0.96"/>
+  <rect x="150" y="72" width="500" height="640" rx="36" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)"/>
+  <rect x="210" y="130" width="380" height="54" rx="27" fill="url(#card)" opacity="0.8"/>
+  <rect x="220" y="235" width="360" height="180" rx="28" fill="rgba(255,255,255,0.08)"/>
+  <rect x="220" y="447" width="160" height="20" rx="10" fill="rgba(255,255,255,0.16)"/>
+  <rect x="220" y="485" width="220" height="20" rx="10" fill="rgba(255,255,255,0.12)"/>
+  <rect x="220" y="523" width="280" height="20" rx="10" fill="rgba(255,255,255,0.12)"/>
+  <text x="400" y="786" font-size="34" text-anchor="middle" fill="#edf7ff" font-family="Arial, sans-serif" font-weight="700">Profile Photo Placeholder</text>
+</svg>
