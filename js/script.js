@@ -68,6 +68,15 @@ if (contactForm) {
 
     if (submitButton.disabled) return;
 
+    if (window.location.protocol === 'file:') {
+      setFormStatus(
+        'Opening FormSubmit to send your message. This local preview will leave the portfolio page.',
+        'success'
+      );
+      HTMLFormElement.prototype.submit.call(contactForm);
+      return;
+    }
+
     submitButton.disabled = true;
     contactForm.setAttribute('aria-busy', 'true');
     setFormStatus('Sending your message...', 'success');
