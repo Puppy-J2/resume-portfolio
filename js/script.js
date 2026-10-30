@@ -42,7 +42,10 @@ const revealObserver = new IntersectionObserver(
 revealNodes.forEach((node) => revealObserver.observe(node));
 
 if (contactForm) {
-  contactForm.addEventListener('submit', (event) => {
+  const submitButton = contactForm.querySelector('button[type="submit"]');
+  const formEndpoint = 'https://formsubmit.co/ajax/mbattungjoshua@gmail.com';
+
+  contactForm.addEventListener('submit', async (event) => {
     event.preventDefault();
 
     const formData = new FormData(contactForm);
@@ -63,8 +66,50 @@ if (contactForm) {
       return;
     }
 
-    setFormStatus('This form is a front-end demo only. Connect it to a backend or email service to send real messages.', 'success');
-    contactForm.reset();
+    if (submitButton.disabled) return;
+
+    submitButton.disabled = true;
+    contactForm.setAttribute('aria-busy', 'true');
+    setFormStatus('Sending your message...', 'success');
+
+    try {
+      const response = await fetch(formEndpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          subject,
+          message,
+          _subject: 'New message from your resume portfolio',
+          _template: 'table',
+          _honey: String(formData.get('_honey') || ''),
+        }),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok || (result.success !== true && result.success !== 'true')) {
+        throw new Error('The email service did not accept the message.');
+      }
+
+      setFormStatus(
+        'Your message was submitted. If this is your first submission, confirm the FormSubmit activation email sent to mbattungjoshua@gmail.com to enable delivery.',
+        'success'
+      );
+      contactForm.reset();
+    } catch {
+      setFormStatus(
+        'Your message could not be sent. Please try again or email mbattungjoshua@gmail.com directly.',
+        'error'
+      );
+    } finally {
+      submitButton.disabled = false;
+      contactForm.removeAttribute('aria-busy');
+    }
   });
 }
 
