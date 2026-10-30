@@ -550,21 +550,6 @@ textarea {
   color: var(--muted);
 }
 
-.education-entry {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
-.education-entry h4,
-.education-entry p {
-  margin: 0;
-}
-
-.education-entry p {
-  color: var(--muted);
-}
-
 .contact-grid {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
