@@ -44,7 +44,7 @@ python -m http.server 8000
 
 ## Contact Form Delivery
 
-The contact form sends submissions to `mbattungjoshua@gmail.com` through FormSubmit. On the first submission, check that inbox for FormSubmit's activation email and confirm it to enable delivery. The form uses FormSubmit's AJAX endpoint when JavaScript is available and has a standard form-post fallback. Keep the provider's spam protection enabled; never put private API keys or SMTP credentials in this static site.
+The contact form sends submissions to `mbattungjoshua@gmail.com` through FormSubmit. On the first submission, check that inbox for FormSubmit's activation email and confirm it to enable delivery. The form uses FormSubmit's AJAX endpoint on a hosted page and submits directly to the provider when opened from a local `file://` preview, which avoids browser cross-origin restrictions. Direct submission navigates away from the local preview. Keep the provider's spam protection enabled; never put private API keys or SMTP credentials in this static site.
 
 ## Personalize the Website
 
