@@ -42,6 +42,10 @@ python -m http.server 8000
 
 2. Visit `http://localhost:8000` in your browser.
 
+## Contact Form Delivery
+
+The contact form sends submissions to `mbattungjoshua@gmail.com` through FormSubmit. On the first submission, check that inbox for FormSubmit's activation email and confirm it to enable delivery. The form uses FormSubmit's AJAX endpoint when JavaScript is available and has a standard form-post fallback. Keep the provider's spam protection enabled; never put private API keys or SMTP credentials in this static site.
+
 ## Personalize the Website
 
 Update the following placeholders in `index.html` before publishing:
