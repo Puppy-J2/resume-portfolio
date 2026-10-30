@@ -56,7 +56,6 @@ Update the following placeholders in `index.html` before publishing:
 - Certificate entries and certificate files in `assets/certificates/`
 - Experience details
 - Project descriptions and links
-- Education records
 - Contact details
 
 Do not add fake credentials, fake links, fake screenshots, or fake employment records.
@@ -177,7 +176,6 @@ Open the website locally and walk through the following during presentation:
 - Home profile section
 - Skills and certificates
 - Experience and projects
-- Education timeline
 - Contact form and interaction
 - Domain deployment plan
 - Deployment steps and DNS explanation
